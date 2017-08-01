@@ -27,7 +27,7 @@ def my_arq():
                     pasta = input("Indique o nome da Pasta: ")#entrada de string informe o nome da pasta que deseja criar --->
                     os.mkdir(rota +pasta) #os.mkdir = abra uma apsta no determinado diretorio
                     start_tempo = time.time() - tempo #calculando o tempo--->
-                    print("Pasta",carpeta,"criada com sucesso em %.2f Segundos" % (start_tempo))
+                    print("Pasta",pasta,"criada com sucesso em %.2f Segundos" % (start_tempo))
                 else: my_arq() #se não chame a função novamente como um "loop" --->
         elif opcao == "e": #seguindo a linha Acima da opção --->
             rota = input("Indique o diretorio caso contrario Diretorio Atual: ") #rota entrada de string informe o diretorio---->
