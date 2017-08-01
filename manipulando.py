@@ -13,7 +13,7 @@ def my_arq():
             if (os.path.isdir(rota)): #os.path.isdir para encaminhar aum determinado diretorio --->
                 tipo = input("Escolha uma Opcao:\n(a) = Arquivo:\n(p) = Pasta: ") #tipo de a = arquivo ou p = Pastaque deseja criar --->
                 if(tipo == "a"): #se o tipo for igual a "a" --->
-                    arquivo = input("Indique o nome do Arquivo: ") #entrada de string "indique o nome do arqivo"--->            
+                    arquivo = input("Indique o nome do Arquivo:\n#: ") #entrada de string "indique o nome do arqivo"--->            
                     escreva = input("escreva algo:") #Escreva algo nesse arquivo --->
                     tempo1 = time.time() #coloquei o tempo pra calcular o tempo que o arquivo foi criado ---->
                     with open(rota+ arquivo, "w") as f: #abra o arquivo com a determinada rota informad aacima ,"w"= writeEscreva --->
@@ -40,7 +40,7 @@ def my_arq():
                 print("Pasta",apagar,"Eliminado Com sucesso: ") #imprima pasta " " apagada com sucesso ---->
             else: my_arq() #se não chame a função novamente --->
         elif opcao == 'l': #se opção for igual a 'l' --->
-            info = input("informe o Arquvio que deseja Ler: ") #informe o arquivo que dejeja ler --->
+            info = input("informe o Arquvio que deseja Ler:\n#: ") #informe o arquivo que dejeja ler --->
             start = time.time() #calclulandp p tempo --->
             with open (info,"r") as f: #informe o arquivo que deseja ler --->
                 for i in range(10): #gere o loop de 10 --->
