@@ -11,7 +11,7 @@ def my_arq():
             rota = input("Informe o local onde pretende uliliazr: ")#entrada de string perguntando Qual diretorio pretende ultizar --->
             if rota == "": rota = os.getcwd() + "\\" #Informa o diretorio Atual --->
             if (os.path.isdir(rota)): #os.path.isdir para encaminhar aum determinado diretorio --->
-                tipo = input("Indique a=arquivo ou P=pasta: ") #tipo de a = arquivo ou p = Pastaque deseja criar --->
+                tipo = input("Escolha uma Opcao:\n(a) = Arquivo:\n(p) = Pasta: ") #tipo de a = arquivo ou p = Pastaque deseja criar --->
                 if(tipo == "a"): #se o tipo for igual a "a" --->
                     arquivo = input("Indique o nome do Arquivo: ") #entrada de string "indique o nome do arqivo"--->            
                     escreva = input("escreva algo:") #Escreva algo nesse arquivo --->
