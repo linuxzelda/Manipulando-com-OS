@@ -55,10 +55,10 @@ def eliminar_arq():
             opcao1 = int(input("(1) Continuar[+]:\n(2) Sair[-]:\n(3)Voltar ao principal[M]:\n#: "))
             if opcao1 == 1:
                 eliminar_arq()
-            elif opcao1 == 3:
-                my_arq()
             elif opcao1 == 2:
                 break
+            elif opcao1 == 3:
+                my_arq()
 
     except KeyboardInterrupt as msg:
         print(msg)
@@ -82,10 +82,10 @@ def ler_arq():
             opcao2 = int(input("(1) Continuar[+]:\n(2) Sair[-]:\n(3) Voltar ao Principal[M]:\n#: "))
             if opcao2 == 1:
                 ler_arq()
-            elif opcao2 == 3:
-                my_arq()
             elif opcao2 == 2:
                 break
+            elif opcao2 == 3:
+                my_arq()
 
     except KeyboardInterrupt as msg:
         print(msg)
